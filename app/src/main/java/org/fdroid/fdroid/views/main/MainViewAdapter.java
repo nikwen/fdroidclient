@@ -33,10 +33,8 @@ class MainViewAdapter extends RecyclerView.Adapter<MainViewController> {
         this.activity = activity;
         setHasStableIds(true);
         positionToId.put(0, R.id.whats_new);
-        positionToId.put(1, R.id.categories);
-        positionToId.put(2, R.id.nearby);
-        positionToId.put(3, R.id.updates);
-        positionToId.put(4, R.id.settings);
+        positionToId.put(1, R.id.updates);
+        positionToId.put(2, R.id.settings);
     }
 
     @Override

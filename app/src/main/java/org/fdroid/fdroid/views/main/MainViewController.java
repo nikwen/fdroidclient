@@ -38,7 +38,7 @@ class MainViewController extends RecyclerView.ViewHolder {
      * @see WhatsNewViewBinder
      */
     public void bindWhatsNewView() {
-        new WhatsNewViewBinder(activity, frame);
+        new SearchViewBinder(activity, frame);
     }
 
     /**

@@ -172,6 +172,7 @@ This often occurs with apps installed via Google Play or other sources, if they 
     <string name="menu_liberapay">Liberapay</string>
 
     <string name="main_menu__latest_apps">Latest</string>
+    <string name="main_menu__search">Search</string>
     <string name="main_menu__categories">Categories</string>
     <string name="main_menu__swap_nearby">Nearby</string>
 
@@ -182,6 +183,8 @@ This often occurs with apps installed via Google Play or other sources, if they 
     <string name="latest__empty_state__no_enabled_repos">Once you enable a repository and let it update, the latest apps
         should show here
     </string>
+
+    <string name="search__empty_state__click_icon_below">Search for apps by clicking the icon below</string>
 
     <string name="categories__empty_state__no_categories">No categories to display</string>
 
