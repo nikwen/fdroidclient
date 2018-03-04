@@ -35,7 +35,7 @@ public class AppListActivity extends AppCompatActivity implements LoaderManager.
     private AppListAdapter appAdapter;
     private String category;
     private String searchTerms;
-    private String sortClauseSelected = SortClause.LAST_UPDATED;
+    private String sortClauseSelected = SortClause.NAME;
     private TextView emptyState;
     private EditText searchInput;
     private ImageView sortImage;
@@ -73,32 +73,10 @@ public class AppListActivity extends AppCompatActivity implements LoaderManager.
 
         sortImage = (ImageView) findViewById(R.id.sort);
         if (FDroidApp.isAppThemeLight()) {
-            sortImage.setImageResource(R.drawable.ic_last_updated_black);
+            sortImage.setImageResource(R.drawable.ic_az_black);
         } else {
-            sortImage.setImageResource(R.drawable.ic_last_updated_white);
+            sortImage.setImageResource(R.drawable.ic_az_white);
         }
-        sortImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (sortClauseSelected.equalsIgnoreCase(SortClause.LAST_UPDATED)) {
-                    sortClauseSelected = SortClause.NAME;
-                    if (FDroidApp.isAppThemeLight()) {
-                        sortImage.setImageResource(R.drawable.ic_az_black);
-                    } else {
-                        sortImage.setImageResource(R.drawable.ic_az_white);
-                    }
-                } else {
-                    sortClauseSelected = SortClause.LAST_UPDATED;
-                    if (FDroidApp.isAppThemeLight()) {
-                        sortImage.setImageResource(R.drawable.ic_last_updated_black);
-                    } else {
-                        sortImage.setImageResource(R.drawable.ic_last_updated_white);
-                    }
-                }
-                getSupportLoaderManager().restartLoader(0, null, AppListActivity.this);
-                appView.scrollToPosition(0);
-            }
-        });
 
         emptyState = (TextView) findViewById(R.id.empty_state);
 
