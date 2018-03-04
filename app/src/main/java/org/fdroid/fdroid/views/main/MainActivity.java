@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
     private RecyclerView pager;
     private MainViewAdapter adapter;
     private BottomNavigationBar bottomNavigation;
-    private int selectedMenuId = R.id.whats_new;
+    private int selectedMenuId = R.id.updates;
     private BadgeItem updatesBadge;
 
     @Override
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
         LocalBroadcastManager.getInstance(this).registerReceiver(onUpdateableAppsChanged, updateableAppsFilter);
 
         if (savedInstanceState != null) {
-            selectedMenuId = savedInstanceState.getInt(STATE_SELECTED_MENU_ID, R.id.whats_new);
+            selectedMenuId = savedInstanceState.getInt(STATE_SELECTED_MENU_ID, R.id.updates);
         }
         setSelectedMenuInNav();
 
