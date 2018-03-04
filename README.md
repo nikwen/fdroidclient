@@ -1,10 +1,25 @@
-# F-Droid Client
+# Modified version of the F-Droid Client
 
 [![build status](https://gitlab.com/fdroid/fdroidclient/badges/master/build.svg)](https://gitlab.com/fdroid/fdroidclient/builds)
 [![Translation status](https://hosted.weblate.org/widgets/f-droid/-/svg-badge.svg)](https://hosted.weblate.org/engage/f-droid/)
 
+**NOTE: This is an UNOFFICIAL modified version of the F-Droid client!**
+
 Client for [F-Droid](https://f-droid.org), the Free Software repository system
 for Android.
+
+## Modifications
+
+This modified version removes the ability to browse for (i.e. "discover") new apps and puts the focus on updating the installed apps. Installing new apps is still possible by searching for a particular app.
+
+This is helpful if you find yourself browsing the list of new and updated apps way too often.
+
+Full list of changes:
+
+* Replace the whats_new and category pages with a single white search page
+* Remove the nearby page
+* Select the updates tab by default
+* Remove ability to sort for LAST_UPDATED in search
 
 ## Building with Gradle
 
