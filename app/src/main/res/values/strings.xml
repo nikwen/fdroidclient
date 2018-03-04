@@ -172,7 +172,6 @@ This often occurs with apps installed via Google Play or other sources, if they 
     <string name="menu_liberapay">Liberapay</string>
 
     <string name="main_menu__latest_apps">Latest</string>
-    <string name="main_menu__search">Search</string>
     <string name="main_menu__categories">Categories</string>
     <string name="main_menu__swap_nearby">Nearby</string>
 

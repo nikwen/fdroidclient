@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
                 .setInActiveColor(R.color.bottom_nav_items)
                 .setActiveColor(android.R.color.white)
                 .setMode(BottomNavigationBar.MODE_FIXED)
-                .addItem(new BottomNavigationItem(R.drawable.ic_search_white, R.string.main_menu__search))
+                .addItem(new BottomNavigationItem(R.drawable.ic_search_white, R.string.menu_search))
                 .addItem(new BottomNavigationItem(R.drawable.ic_updates, R.string.updates).setBadgeItem(updatesBadge))
                 .addItem(new BottomNavigationItem(R.drawable.ic_settings, R.string.menu_settings))
                 .initialise();
